@@ -6,6 +6,7 @@ $step-circle: 24px;
     [md-list-item]:active,
     [md-list-item]:focus {
       outline: none;
+      background-color: transparent;
     }
     [md-list-item].md-interaction-disabled .md-list-item {
       background: none !important;
@@ -15,6 +16,12 @@ $step-circle: 24px;
       flex: 1;
       height: 72px !important;
       padding: 0px !important;
+    }
+    .md-list-item-focus{
+      background-color: transparent;
+    }
+    .md-list-item:hover{
+      background-color: transparent;
     }
   }
 }
@@ -42,7 +49,7 @@ md-icon {
     width: $step-circle;
   }
 }
-.td-circle {
+.td-circle, .td-triangle {
   height: $step-circle;
   width: $step-circle;
   line-height: $step-circle;
@@ -51,24 +58,22 @@ md-icon {
   flex: none;
   & md-icon {
     margin-top: 2px;
-    font-weight: bold;
+    color: white;
   }
 }
-.td-triangle {
-  & > md-icon {
-    font-size: 27px;
+.td-triangle{
+  & md-icon {
+    margin-top: 3px;
+    font-size: 18px;
   }
 }
 .td-complete {
   font-size: 0;
 }
-.td-circle,
+.td-circle, .td-triangle,
 .td-complete {
   margin-left: 8px;
   font-size: 14px;
-}
-.td-triangle {
-  margin-left: 7px;
 }
 .td-step-label-wrapper {
   padding-left: 8px;
