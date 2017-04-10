@@ -10,7 +10,7 @@
   $background: map-get($theme, background);
   td-steps {
     .td-steps-header {
-     // @include md-elevation(1);
+      //@include mat-elevation(1);
     }
     .td-step-content,
     .td-step-summary,
@@ -35,7 +35,12 @@
         }
       }
       .md-complete {
-        color: md-color($accent);
+        //color: md-color($accent);
+      }
+      .md-warn {
+        &, & * {
+          color: md-color($warn);
+        }
       }
     }
     .td-circle, .td-triangle {
