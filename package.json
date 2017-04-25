@@ -37,10 +37,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/teradata/covalent.git"
+    "url": "https://github.com/rraya/covalent.git"
   },
   "bugs": {
-    "url": "https://github.com/teradata/covalent/issues"
+    "url": "https://github.com/rraya/covalent/issues"
   },
   "license": "MIT",
   "author": "Teradata UX",
