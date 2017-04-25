@@ -1,0 +1,26 @@
+:host {
+  display: block; }
+  :host .td-expansion-panel {
+    transition: 400ms all ease; }
+    :host .td-expansion-panel .td-expansion-panel-header {
+      position: relative;
+      outline: none; }
+      :host .td-expansion-panel .td-expansion-panel-header:focus, :host .td-expansion-panel .td-expansion-panel-header:hover {
+        cursor: pointer; }
+      :host .td-expansion-panel .td-expansion-panel-header.mat-disabled {
+        background: none;
+        cursor: auto; }
+      :host .td-expansion-panel .td-expansion-panel-header .td-expansion-panel-header-content {
+        height: 48px;
+        padding: 0 16px; }
+
+.td-expansion-label,
+.td-expansion-sublabel {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 5px; }
+  /deep/ [dir='rtl'] .td-expansion-label, /deep/ [dir='rtl']
+  .td-expansion-sublabel {
+    margin-left: 5px;
+    margin-right: inherit; }
